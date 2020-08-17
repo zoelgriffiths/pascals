@@ -5,9 +5,9 @@ import math
 def search(row_limit):
     list_numbers = []
     
-    #Below I am dictating the rows and 'columns' I will compute cell values for. 
+    #Below I am dictating the rows and columns I will compute cell values for. 
     
-    #(I have excluded the outer two diagonals (on either side) of Pascal's triangle, because we know that the numbers in those diagonals (across the whole triangle) are an infinite number of 1s and two appearances of all other positive integers.)
+    #(I have excluded the outer two diagonals (on either side) of Pascal's triangle, because we know that the numbers in those diagonals (across the whole triangle) are an infinite number of 1s and two appearances of all other positive integers apart from 2 (for which there is only one appearance).)
     
     for n in range(4,row_limit):
         for r in range(2,n-1):
@@ -29,7 +29,7 @@ def search(row_limit):
     final_info = dict(zip(which_ones,how_many_times))
     
     for entry,frequency in final_info.items(): 
-        print ("The number {0} appears atleast {1} times across the whole triangle".format(entry,frequency))
+        print ("The number {0} appears at least {1} times across the whole triangle".format(entry,frequency))
         
     return "END"
 
