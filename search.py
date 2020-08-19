@@ -1,4 +1,4 @@
-#Use this code to find which numbers repeat an interesting amount in Pascal's triangle.
+#Use this code to find which numbers repeat an interesting number of times in Pascal's triangle.
 
 import math 
 
